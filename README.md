@@ -16,10 +16,26 @@
 * [自主学習について](https://gis-oer.github.io/gitbook/book/GISオープン教材/)
 
 ------
-以下、講習時のメモ
+
+## 以下、講習時のメモ
+
 * [QGIS2.8のインストール](https://github.com/gis-oer/gis-oer/blob/master/install/q2.8install.md)
 
 * [GIS入門の教材](https://github.com/gis-oer/gis-oer/blob/master/GISオープン教材/01_GISの基本概念/GISの基本概念.md)のGitHub版
 * [地形環境の分析に使えるQGIS入門](https://github.com/gis-oer/gis-oer/blob/master/GISオープン教材/課題/課題ページ/1day実習コース/1day実習コース.md)のGitHub版
 
 * プラグインがインストールできないとき(windows版)は、実習用データの一部を`user(各自の環境に置き換えてください)/.qgis2/python/plugins`に入れてください。
+
+* コンポーザー：[スケールバーの単位を変える(m → km)](h)
+プリントコンポーザーで地図化する範囲によって、スケールバーの単位がmかkmが自動で選択されます。mの表記をkmにしたい場合、スケールバーを挿入後、アイテムプロパティ（スケールバーを選択した状態）＞単位の項目から、「ラベルをkm」とし、「バー単位の地図単位を1000」とする。
+
+* [ラスタ＞地形解析のメニューを表示する](h)
+プラグインの管理とインストールで、`ラスター空間解析プラグイン`にチェックを入れる。
+
+* [ラスタデータの配色](h)
+
+### エラーのメモ
+
+* 新規データの出力の際にデフォルトの書き出し先を選択するとエラーが出る
+
+* VoGIS Profile Toolが起動しない（プラグインが壊れていると表記される）
