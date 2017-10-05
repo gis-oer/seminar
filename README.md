@@ -15,7 +15,7 @@
 
 * データ(会場で配布)
 
-* [アンケート](https://customform.jp/form/input/15813/)を記入する
+* [アンケート](https://customform.jp/form/input/17227/)を記入する
 
 * [自主学習について](https://gis-oer.github.io/gitbook/book/GISオープン教材/)
 
