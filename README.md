@@ -48,9 +48,9 @@
 解決策：qProfプラグインを使用（地形断面が表示できる別のプラグイン）
 
 プラグインの管理とインストールからqProfをインストールする。プラグイン> qProf > qProfを起動する。
-![profile](pic/15pic_22_1.png)
+![profile](img/15pic_22_1.png)
 
-![profile](pic/15pic_22_2.png)
+![profile](img/15pic_22_2.png)
 
 1. `Digitize line`をクリックする。
 2. 地図上でクリックして断面線を作成する。断面線の作成は、線の最後で右クリックすると完了する。
@@ -62,4 +62,4 @@
 8. ‘Calculate profile statistics’をクリックする
 9. OKをクリックすると地形断面図が表示される。
 
-![profile](pic/15pic_22_3.png)
+![profile](img/15pic_22_3.png)
