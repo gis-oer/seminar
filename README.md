@@ -11,7 +11,7 @@
 
 * [印刷用PDF](https://github.com/gis-oer/seminar/raw/master/book.pdf)
 
-※GitBookの仕様上、PDF内の画像やページ番号がずれて表示されます。
+※GitBookの仕様上、PDF内の改ページやページ番号に不具合が生じます。本PDFを印刷して使用する場合、割り付け印刷(2in1)を推奨します。
 
 * データ(会場で配布)
 
