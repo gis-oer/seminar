@@ -9,6 +9,10 @@
 
   * [地形環境の分析に使えるQGIS入門](https://gis-oer.github.io/gitbook/book/GISオープン教材/課題/課題ページ/1day実習コース/1day実習コース.html)に進む
 
+* [印刷用PDF](https://github.com/gis-oer/seminar/raw/master/book.pdf)
+
+※GitBookの仕様上、PDF内の画像やページ番号がずれて表示されます。
+
 * データ(会場で配布)
 
 * [アンケート](https://customform.jp/form/input/15813/)を記入する
@@ -54,7 +58,7 @@
 
 1. `Digitize line`をクリックする。
 2. 地図上でクリックして断面線を作成する。断面線の作成は、線の最後で右クリックすると完了する。
-3. ‘Define topographic sources’をクリックする。
+3. `Define topographic sources`をクリックする。
 4. `Define source DEMs`をクリックする。
 5. ソースラスターをチェックし、OKをクリックする。
 6. DEM(s) and line sourcesのウィンドウのＯＫをクリックする。
