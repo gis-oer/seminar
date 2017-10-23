@@ -7,7 +7,7 @@
 * [GISの実習用オープン教材](http://gis-oer.csis.u-tokyo.ac.jp/)
   * [GIS入門](https://gis-oer.github.io/gitbook/book/GISオープン教材/01_GISの基本概念/GISの基本概念.html)に進む
 
-  * [地形環境の分析に使えるQGIS入門](https://gis-oer.github.io/gitbook/book/old/book_20171020/GISオープン教材/課題/課題ページ/1day実習コース/1day実習コース.html)に進む
+  * [地形環境の分析に使えるQGIS入門](https://gis-oer.github.io/gitbook/old/book_20171020/GISオープン教材/課題/課題ページ/1day実習コース/1day実習コース.html)に進む
 
 * [印刷用PDF](https://github.com/gis-oer/seminar/raw/master/book.pdf)
 
