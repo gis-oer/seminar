@@ -26,7 +26,7 @@
 * [QGIS2.8のインストール](https://github.com/gis-oer/gis-oer/blob/master/install/q2.8install.md)
 
 * [GIS入門の教材](https://github.com/gis-oer/gis-oer/blob/master/GISオープン教材/01_GISの基本概念/GISの基本概念.md)のGitHub版
-* [地形環境の分析に使えるQGIS入門](https://github.com/gis-oer/gis-oer/blob/master/GISオープン教材/課題/課題ページ/1day実習コース/1day実習コース.md)のGitHub版
+* 地形環境の分析に使えるQGIS入門
 
 * プラグインがインストールできないとき(windows版)は、実習用データの一部を`user(各自の環境に置き換えてください)/.qgis2/python/plugins`に入れてください。
 
