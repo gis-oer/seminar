@@ -11,4 +11,6 @@ VR機能をオンにしてスマートフォンで閲覧してみてください
 - []()
 - []()
 - [秋吉台](https://www.skypixel.com/photos/akiyoshi-plateau)
-- [クトゥブミナール](https://www.skypixel.com/photos/3ae131fb-eaad-4ee8-b7b3-45ebe4c64d49)
+- [クトゥブミナール 石室（インド）](https://www.skypixel.com/photos/3ae131fb-eaad-4ee8-b7b3-45ebe4c64d49)
+- [クトゥブミナール　石棟（インド）](https://www.skypixel.com/photos/bbe39506-83b7-4584-b48f-2f350e09bb26)
+- [天安門広場（中国）](https://www.skypixel.com/photos/tiananmen-square)
