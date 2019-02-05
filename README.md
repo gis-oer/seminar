@@ -19,7 +19,7 @@
     - 空間データの作成・編集・統合・変換（ベクタのみ）
 
 - 2/8(金)：3～5限  
-  13:00-17:00	実習のみ？：ラスタデータ分析入門
+  13:00-17:00	実習 ：ラスタデータ分析入門
     - 空間データの作成・編集・統合・変換（ラスタのみ）
     - 地形情報の可視化(ラスタデータの分析）
     - GRASS GIS: 流域解析(ラスタデータの分析)
@@ -50,8 +50,8 @@
 この実習は、QGISを用いたGISの入門、既存のGISデータの取得法を学習するものです。下記の教材を用いて学習をすすめ、課題を行ってください。
 
 #### 実習項目と教材
-1. QGIS入門 [教材：QGISビギナーズマニュアル]
-2. 既存データの取得 [教材：既存の地図データと属性データ]
+1. QGIS入門 [教材：QGISビギナーズマニュアル](https://gis-oer.github.io/gitbook/book/materials/QGIS/QGIS.html)
+2. 既存データの取得 [教材：既存の地図データと属性データ](https://gis-oer.github.io/gitbook/book/materials/07/07.html)
 
 #### 実習の注意事項
 - この実習のみ、各教材や課題の終了後にQGISを一度閉じ（作業ファイルは任意の場所に保存）、再起動してから次の実習、課題を行ってください。
@@ -64,8 +64,8 @@
 #### 課題
 リンク先の課題を行ってください。
 
-1. [QGIS入門の課題1]※GRASS入門の課題は対象外
-2. [既存の地図データと属性データの課題1]
+1. [QGIS入門の課題1](https://gis-oer.github.io/gitbook/book/materials/tasks/t_qgis_entry.html)
+2. [既存の地図データと属性データの課題1](https://gis-oer.github.io/gitbook/book/materials/tasks/t_07.html)
 
 #### 課題提出とアンケート
-- [入力フォーム]()
+- [入力フォーム](https://docs.google.com/forms/d/1FkX5JHxRS_v032PYuoj0BdMVSnPqI3DCNq_33hIK7Ss/viewform?edit_requested=true)
