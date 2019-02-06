@@ -50,7 +50,7 @@
 ### Macの場合
 ベクタ：shpやgeotiffへのデータ変換は、対応するソフトウェアが標準で用意されていない（ QGIS　2.x以降は、xmlをQGISで直接ドラッグアンドドロップで表示可能）。
 
-ラスタ：http://space.geocities.jp/bischofia_vb/qgis-plugins/fgddemImporter/ に従ってプラグインをインストール。やや複雑なため、windowsでエコリスソフトウェアの使用を推奨。
+ラスタ：http://space.geocities.jp/bischofia_vb/qgis-plugins/fgddemImporter/ に従ってプラグインをインストール。やや複雑なため、windowsでエコリスソフトウェアの使用を推奨。上記手順の`ユーザフォルダ/.qgis2/python/plugins`は隠しフォルダのため、隠しフォルダを表示する設定にする。
 
 ## 各実習の内容
 
