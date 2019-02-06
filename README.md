@@ -52,6 +52,10 @@
 
 ラスタ：http://space.geocities.jp/bischofia_vb/qgis-plugins/fgddemImporter/ に従ってプラグインをインストール。やや複雑なため、windowsでエコリスソフトウェアの使用を推奨。上記手順の`ユーザフォルダ/.qgis2/python/plugins`は隠しフォルダのため、隠しフォルダを表示する設定にする。
 
+## 実習の問い合わせ
+山内：　h.yamauchi[at]csis.u-tokyo.ac.jp ※[at]は@に置き換えてください。
+
+
 ## 各実習の内容
 
 ### 2/6 教材と課題
