@@ -16,7 +16,7 @@
     - 3.領域分析（バッファ）
     - 4.点データの分析（メッシュ集計、カーネル密度推定）
     - 5.空間データの作成・編集・統合・変換（ベクタのみ）
-    - 6.ネットワーク分析(最短経路検索) ※余裕がある方のみ
+    - 6.ネットワーク分析(最短経路検索) ※余裕がある方余裕(17:00までに1~5が終わっている方)のみ
 
 - 2/8(金)：3～5限  
   13:00-17:00	実習 ：ラスタデータ分析入門
@@ -83,3 +83,61 @@
 
 #### 課題提出とアンケート
 - [入力フォーム](https://docs.google.com/forms/d/1FkX5JHxRS_v032PYuoj0BdMVSnPqI3DCNq_33hIK7Ss/viewform?edit_requested=true)
+
+### 2/7 ベクタデータ分析入門の教材と課題
+この実習では、ダウンロードしたデータを用いて、初歩的な空間解析を行います。GISで空間データを解析する場合、データの位置情報を示す空間座標を統一する必要があるという点に注意して実習を進めてください。この実習をはじめる前に、QGISの`設定>オプション>CRS`から`オンザフライ再投影を有効にしない`にチェックを入れ、再起動しておくと空間座標系の違いが分かりやすいです。
+
+#### 実習項目と教材
+1. 空間座標系の変換 [教材：空間データ]　※空間データの座標変換のみ
+2. 基本的な空間解析 [教材：基本的な空間解析]
+3. 領域分析 [教材：領域分析]　※バッファのみ
+4. 点データの分析 [教材：点データの分析]※視覚的分析のみ
+5. ベクトルデータの作成[教材：空間データの統合・修正]　※点線面の編集、作成のみ
+6. 余裕(17:00までに1~5が終わっていれば)があれば、ネットワーク分析 [教材：ネットワーク分析]　※最短経路検索のみ
+
+#### 実習の注意事項
+
+- この実習の課題データはすべて、緯度経度から平面直角への座標変換が必要です。実習を始める前に、[動画：座標変換の正誤事例](https://youtu.be/jAHJNI5CiKw)を参照し、間違った座標変換を行わないように注意してください。
+- ベクトルデータの作成の課題は次回提出してください。この実習で作成したデータを次回使用するので、データの作成のみ行ってください。
+
+#### 課題
+リンク先の課題を行ってください。
+
+1. [空間データの課題1]
+2. [基本的な空間解析の課題2]
+3. [領域分析の課題1]
+4. [点データの分析の課題1]
+5. [空間データの統合・修正の課題2] ※点（標高点）線（橋）、面（植生）のデータのみ作成してください(この課題で作成したデータを明日使用するため、本日の提出は不要)。
+6. 余裕があれば、[ネットワーク分析の課題1]
+
+#### 課題提出とアンケート
+- [入力フォーム](https://docs.google.com/forms/d/1FkX5JHxRS_v032PYuoj0BdMVSnPqI3DCNq_33hIK7Ss/viewform?edit_requested=true)
+
+[GIS実習オープン教材]:https://gis-oer.github.io/gitbook/book/
+[QGIS]:https://www.qgis.org/ja/site/
+[よくある質問とエラー]:https://gis-oer.github.io/gitbook/book/materials/questions/questions.html
+[教材：QGISビギナーズマニュアル]:https://gis-oer.github.io/gitbook/book/materials/QGIS/QGIS.html
+[教材：既存の地図データと属性データ]:https://gis-oer.github.io/gitbook/book/materials/07/07.html
+[教材：空間データの統合・修正]:https://gis-oer.github.io/gitbook/book/materials/10/10.html
+[QGIS入門の課題1]:https://gis-oer.github.io/gitbook/book/materials/tasks/t_qgis_entry.html
+[既存の地図データと属性データの課題1]:https://gis-oer.github.io/gitbook/book/materials/tasks/t_07.html
+[空間データの統合・修正の課題2]:https://gis-oer.github.io/gitbook/book/materials/tasks/t_10.html
+[教材：空間データ]:https://gis-oer.github.io/gitbook/book/materials/08/08.html
+[教材：基本的な空間解析]:https://gis-oer.github.io/gitbook/book/materials/11/11.html
+[教材：ネットワーク分析]:https://gis-oer.github.io/gitbook/book/materials/12/12.html
+[教材：領域分析]:https://gis-oer.github.io/gitbook/book/materials/13/13.html
+[空間データの課題1]:https://gis-oer.github.io/gitbook/book/materials/tasks/t_08.html
+[基本的な空間解析の課題2]:https://gis-oer.github.io/gitbook/book/materials/tasks/t_11.html
+[ネットワーク分析の課題1]:https://gis-oer.github.io/gitbook/book/materials/tasks/t_12.html
+[領域分析の課題1]:https://gis-oer.github.io/gitbook/book/materials/tasks/t_13.html
+[教材：点データの分析]:https://gis-oer.github.io/gitbook/book/materials/14/14.html
+[教材：ラスタデータの分析]:https://gis-oer.github.io/gitbook/book/materials/15/15.html
+[教材：空間補間]:https://gis-oer.github.io/gitbook/book/materials/18/18.html
+[点データの分析の課題1]:https://gis-oer.github.io/gitbook/book/materials/tasks/t_14.html
+[ラスタデータの分析の課題1]:https://gis-oer.github.io/gitbook/book/materials/tasks/t_15.html
+[任意：ラスタデータの分析の課題2]:https://gis-oer.github.io/gitbook/book/materials/tasks/t_15.html
+[空間補間の課題2]:https://gis-oer.github.io/gitbook/book/materials/tasks/t_18.html
+[任意：ラスタデータの分析の課題3]:https://gis-oer.github.io/gitbook/book/materials/tasks/t_15.html
+[ラスタデータの分析の課題4]:https://gis-oer.github.io/gitbook/book/materials/tasks/t_15.html
+[任意：空間データの課題2]:https://gis-oer.github.io/gitbook/book/materials/tasks/t_08.html
+[任意：空間データの課題3]:https://gis-oer.github.io/gitbook/book/materials/tasks/t_08.html
