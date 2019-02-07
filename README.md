@@ -105,6 +105,7 @@
 - コンポーザーのスケールがメートルにならない場合：　右下のEPSGをクリックし、`オンザフライ再投影`にチェックを入れ平面直角の座標系を指定する
 - 地理院タイルが読み込めない場合：右下のEPSGをクリックし、`オンザフライ再投影`にチェックを入れ平面直角の座標系を指定する
 - 国土数値情報のデータ（インポートしたときに座標系の指定を求められるもの）は、緯度経度で提供されているため、JGD2000としてインポートする（その後、変換作業が必要）
+- [課題2で使うe-statのデータ:平群町、生駒市を取得](https://www.e-stat.go.jp/gis/statmap-search?page=1&type=2&aggregateUnitForBoundary=A&toukeiCode=00200521&toukeiYear=2015&serveyId=A002005212015&prefCode=29&coordsys=1&format=shape)
 
 
 
