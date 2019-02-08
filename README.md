@@ -122,6 +122,34 @@
 #### 課題提出とアンケート
 - [入力フォーム](https://docs.google.com/forms/d/1FkX5JHxRS_v032PYuoj0BdMVSnPqI3DCNq_33hIK7Ss/viewform?edit_requested=true)
 
+### 2/8 ラスタデータ分析入門教材と課題
+この実習では、ラスタデータを用いて、地形情報の可視化や分析を行います。空間データの座標系に注意しながら、実習を進めてください。
+
+#### 実習項目と教材
+1. [教材：空間データの統合・修正]　※前半部のラスタデータの部分のみ（ラスタの結合、座標変換、等高線作成、配色）のみ
+2. [教材：ラスタデータの分析]　※地形情報の可視化（段彩図、傾斜区分図、斜面方位図、陰影図、鳥瞰図の作成）のみ
+3. [教材：ラスタデータの分析]　※流域解析のみ 
+4. [教材：空間補間]※TIN・IDWのみ
+5. 【任意　ジオリファレンス、ジオコーディング [教材：空間データ]】
+
+## 注意事項
+- 昨日作成したデータがない方は、[こちら](https://github.com/gis-oer/seminar/raw/master/ishinomaki_shp.zip)から完成したものをダウンロードしてください。
+- 2の課題は、完成例と同じように複数の図をまとめて（PowerPoint等で）、1枚の図にしたものを提出してください。
+- 実習データ（day3）について、フォルダ1（実習１のデータ）、フォルダ2(実習2、３のデータ)、フォルダ3（実習4のデータ）となっている点に注意してください。
+
+#### 課題と提出先
+リンク先の課題を行ってください。
+
+1. [空間データの統合・修正の課題2] ※　課題２の背景画像を作成し、昨日作成したシェープファイル
+2. [ラスタデータの分析の課題1]
+3. [ラスタデータの分析の課題4]
+4. [空間補間の課題2]
+5. [任意：空間データの課題2]
+6. [任意：空間データの課題3]
+
+#### 課題提出とアンケート
+- [入力フォーム](https://docs.google.com/forms/d/1FkX5JHxRS_v032PYuoj0BdMVSnPqI3DCNq_33hIK7Ss/viewform?edit_requested=true)
+
 [GIS実習オープン教材]:https://gis-oer.github.io/gitbook/book/
 [QGIS]:https://www.qgis.org/ja/site/
 [よくある質問とエラー]:https://gis-oer.github.io/gitbook/book/materials/questions/questions.html
