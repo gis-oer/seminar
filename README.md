@@ -1,6 +1,9 @@
 # 2018年度　地球惑星環境科学科リモートセンシング・ GISおよび実習 前半（GIS）
 
 ## 日程　2019/2/6, 7, 8
+## 課題提出期限は、2/14 [提出フォーム](https://docs.google.com/forms/d/1WI09sjiBq1hB1S8reIzhPdXn1kcvu-9mAl7U6DftkKU/viewform?edit_requested=true)
+
+※2/9から朝方から11:00頃に、提出フォームが利用できれないエラーが起きていたようです。提出フォームを更新したため、上記の提出先をご利用ください。不明な点は、メールにてご連絡ください。
 
 - 2/6(水)：2～5限  
   10:00-12:00	講義  
@@ -82,7 +85,7 @@
 2. [既存の地図データと属性データの課題1](https://gis-oer.github.io/gitbook/book/materials/tasks/t_07.html)
 
 #### 課題提出とアンケート
-- [入力フォーム](https://docs.google.com/forms/d/1FkX5JHxRS_v032PYuoj0BdMVSnPqI3DCNq_33hIK7Ss/viewform?edit_requested=true)
+- [入力フォーム](https://docs.google.com/forms/d/1WI09sjiBq1hB1S8reIzhPdXn1kcvu-9mAl7U6DftkKU/viewform?edit_requested=true)
 
 ### 2/7 ベクタデータ分析入門の教材と課題
 **（必読）**この実習では、ダウンロードしたデータを用いて、初歩的な空間解析を行います。GISで空間データを解析する場合、データの位置情報を示す空間座標を統一する必要があるという点に注意して実習を進めてください。この実習をはじめる前に、QGISの`設定>オプション>CRS`から`オンザフライ再投影を有効にしない`にチェックを入れ、再起動しておくと空間座標系の違いが分かりやすいです。
@@ -120,7 +123,7 @@
 6. 余裕があれば、[ネットワーク分析の課題1]
 
 #### 課題提出とアンケート
-- [入力フォーム](https://docs.google.com/forms/d/1FkX5JHxRS_v032PYuoj0BdMVSnPqI3DCNq_33hIK7Ss/viewform?edit_requested=true)
+- [入力フォーム](https://docs.google.com/forms/d/1WI09sjiBq1hB1S8reIzhPdXn1kcvu-9mAl7U6DftkKU/viewform?edit_requested=true)
 
 ### 2/8 ラスタデータ分析入門教材と課題
 この実習では、ラスタデータを用いて、地形情報の可視化や分析を行います。空間データの座標系に注意しながら、実習を進めてください。
@@ -153,7 +156,7 @@
 6. [任意：空間データの課題3]
 
 #### 課題提出とアンケート
-- [入力フォーム](https://docs.google.com/forms/d/1FkX5JHxRS_v032PYuoj0BdMVSnPqI3DCNq_33hIK7Ss/viewform?edit_requested=true)
+- [入力フォーム](https://docs.google.com/forms/d/1WI09sjiBq1hB1S8reIzhPdXn1kcvu-9mAl7U6DftkKU/viewform?edit_requested=true)
 
 [GIS実習オープン教材]:https://gis-oer.github.io/gitbook/book/
 [QGIS]:https://www.qgis.org/ja/site/
