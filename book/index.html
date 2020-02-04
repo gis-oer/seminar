@@ -182,6 +182,8 @@
 <li>shapeファイルは、.shp,.shx,.dbf等の複数のファイルから構成されます。そのため、移動する際にはすべてを移動してください。.shpのみを移動したために、データが表示できないというミスが多いです。</li>
 <li>初回の実習のみ、空間座標系の関係上、各教材や課題の終了後にQGISを一度閉じ（作業ファイルは任意の場所に保存）、再起動してから次の実習、課題を行ってください。</li>
 </ul>
+<h3><a class="header" href="#教材の便利な閲覧法任意で参照" id="教材の便利な閲覧法任意で参照">教材の便利な閲覧法（任意で参照）</a></h3>
+<p>（初回説明予定）QWebプラグインを活用して、QGIS上で教材を参照します。プラグインの管理とインストール＞QWebをインストール。データがダウンロードできない点に注意。</p>
 
                     </main>
 
@@ -212,21 +214,6 @@
 
         </div>
 
-        
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            var socket = new WebSocket("ws://localhost:3001");
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload(true); // force reload from server (not from cache)
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
         
 
         
