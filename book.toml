@@ -1,6 +1,0 @@
-[book]
-authors = ["h.yamauchi"]
-language = "en"
-multilingual = false
-src = "src"
-title = "gis_exercises_ut"
