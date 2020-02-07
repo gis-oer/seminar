@@ -18,7 +18,7 @@
 	- [点データの分析](./day2/14.md)
 	- [課題⑤](./day2/tasks/t_14.md)
 - [Day 3](./day3/README.md)
-	- [空間データの作成](./day3/10.md)
+	- [空間データの作成](./day3/10a.md)
 	- [課題①](./day3/tasks/t_10.md)
 	- [地形情報の可視化](./day3/15.md)
 	- [課題②](./day3/tasks/t_15.md)
