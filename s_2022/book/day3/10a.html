@@ -1,0 +1,361 @@
+<!DOCTYPE HTML>
+<html lang="ja" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>空間データの作成 - gis_exercises_ut</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../index.html"><strong aria-hidden="true">1.</strong> 本実習について</a></li><li class="chapter-item expanded "><a href="../day1/index.html"><strong aria-hidden="true">2.</strong> Day 1</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../day1/qgis1.html"><strong aria-hidden="true">2.1.</strong> QGIS入門</a></li><li class="chapter-item expanded "><a href="../day1/tasks/t_qgis_entry.html"><strong aria-hidden="true">2.2.</strong> 課題①</a></li><li class="chapter-item expanded "><a href="../day1/07.html"><strong aria-hidden="true">2.3.</strong> データダウンロード</a></li><li class="chapter-item expanded "><a href="../day1/tasks/t_07.html"><strong aria-hidden="true">2.4.</strong> 課題②</a></li><li class="chapter-item expanded "><a href="../day1/12.html"><strong aria-hidden="true">2.5.</strong> ネットワーク分析</a></li><li class="chapter-item expanded "><a href="../day1/tasks/t_12.html"><strong aria-hidden="true">2.6.</strong> 課題③</a></li></ol></li><li class="chapter-item expanded "><a href="../day2/README1.html"><strong aria-hidden="true">3.</strong> Day 2</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../day2/08_1.html"><strong aria-hidden="true">3.1.</strong> 空間座標系の変換</a></li><li class="chapter-item expanded "><a href="../day2/tasks/t_08.html"><strong aria-hidden="true">3.2.</strong> 課題①</a></li><li class="chapter-item expanded "><a href="../day2/11.html"><strong aria-hidden="true">3.3.</strong> 基本的な空間解析</a></li><li class="chapter-item expanded "><a href="../day2/tasks/t_11.html"><strong aria-hidden="true">3.4.</strong> 課題②〜③</a></li><li class="chapter-item expanded "><a href="../day2/13.html"><strong aria-hidden="true">3.5.</strong> 領域分析（バッファ）</a></li><li class="chapter-item expanded "><a href="../day2/tasks/t_13.html"><strong aria-hidden="true">3.6.</strong> 課題④</a></li><li class="chapter-item expanded "><a href="../day2/14.html"><strong aria-hidden="true">3.7.</strong> 点データの分析</a></li><li class="chapter-item expanded "><a href="../day2/tasks/t_14.html"><strong aria-hidden="true">3.8.</strong> 課題⑤</a></li></ol></li><li class="chapter-item expanded "><a href="../day3/index.html"><strong aria-hidden="true">4.</strong> Day 3</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../day3/10a.html" class="active"><strong aria-hidden="true">4.1.</strong> 空間データの作成</a></li><li class="chapter-item expanded "><a href="../day3/tasks/t_10.html"><strong aria-hidden="true">4.2.</strong> 課題①</a></li><li class="chapter-item expanded "><a href="../day3/15.html"><strong aria-hidden="true">4.3.</strong> 地形情報の可視化</a></li><li class="chapter-item expanded "><a href="../day3/tasks/t_15.html"><strong aria-hidden="true">4.4.</strong> 課題②</a></li><li class="chapter-item expanded "><a href="../day3/15_1.html"><strong aria-hidden="true">4.5.</strong> 流域解析</a></li><li class="chapter-item expanded "><a href="../day3/tasks/t_15_1.html"><strong aria-hidden="true">4.6.</strong> 課題③</a></li><li class="chapter-item expanded "><a href="../day3/18.html"><strong aria-hidden="true">4.7.</strong> 空間補間</a></li><li class="chapter-item expanded "><a href="../day3/tasks/t_18.html"><strong aria-hidden="true">4.8.</strong> 課題④〜⑤</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">gis_exercises_ut</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="空間データの統合修正"><a class="header" href="#空間データの統合修正">空間データの統合・修正</a></h1>
+<p>　本教材は、「空間データの統合・修正」の実習用教材です。GISで用いられるラスタデータ（以下、ラスタという）とベクトルデータ（以下、ベクタという）の統合、修正、変換などデータの編集手法について解説しています。ソフトウェアは、無償で利用できるQGISを用いています。</p>
+<p>　課題形式で使用する場合は、本教材を一読した後、課題ページへお進みください。GIS初学者は、本教材を進める前に<a href="../00/00.html">GISの基本概念</a>の教材を確認しておいてください。本教材を使用する際は、<a href="../../policy.html">利用規約</a>をご確認いただき、これらの条件に同意された場合にのみご利用下さい。</p>
+<h2 id="menu"><a class="header" href="#menu"><strong>Menu</strong></a></h2>
+<ul>
+<li><a href="#%E3%83%A9%E3%82%B9%E3%82%BF%E3%81%AE%E3%83%A2%E3%82%B6%E3%82%A4%E3%82%AF%E3%81%A8%E3%82%AF%E3%83%AA%E3%83%83%E3%83%97">ラスタのモザイクとクリップ</a></li>
+<li><a href="#%E7%AD%89%E9%AB%98%E7%B7%9A%E3%81%AE%E6%8A%BD%E5%87%BA">等高線の抽出</a></li>
+<li><a href="#%E3%83%A9%E3%82%B9%E3%82%BF%E3%82%92%E3%83%99%E3%82%AF%E3%82%BF%E3%81%B8">ラスタをベクタへ</a></li>
+<li><a href="#%E6%96%B0%E8%A6%8F%E3%83%99%E3%82%AF%E3%82%BF%E3%81%AE%E4%BD%9C%E6%88%90">新規ベクターレイヤの作成</a></li>
+</ul>
+<p>以下に関心がある方は、GIS実習オープン教材を参照してください。</p>
+<ul>
+<li><a href="#%E3%83%99%E3%82%AF%E3%82%BF%E3%82%92%E3%83%A9%E3%82%B9%E3%82%BF%E3%81%B8">ベクタをラスタへ</a></li>
+</ul>
+<p><strong>実習用データ</strong></p>
+<p>実習をはじめる前に、<a href="https://github.com/gis-oer/datasets/raw/master/fuji.zip">fuji</a>をダウンロードしてください。座標変換などでgdalのエラーが出る場合、<a href="https://github.com/gis-oer/datasets/raw/master/s/fuji_convert.zip">fuji_convert</a>を使用してください（ラスタの座標変換のパートは、必ず一読してください）。</p>
+<h2 id="ラスタのモザイクとクリップ"><a class="header" href="#ラスタのモザイクとクリップ">ラスタのモザイクとクリップ</a></h2>
+<p>　以下では、ラスタデータ(ここでは、DEMを使用)の結合と任意範囲での切り抜きの解説を行っています。DEMは、Digital Elevation Modelの略であり、各セルごとに標高値を保持しているデータです。以下に従って、ダウンロードしたデータ（<a href="https://github.com/gis-oer/datasets/raw/master/fuji.zip">fuji</a>）から任意の地域のデータを結合し、切り出して下さい。</p>
+<p>ラスタを読み込むボタンをクリックして、<a href="https://github.com/gis-oer/datasets/raw/master/fuji.zip">fuji</a>のラスタを全て読み込む。
+<img src="pic/10pic_1.png" alt="ラスタ" /></p>
+<h3 id="ラスタのモザイク"><a class="header" href="#ラスタのモザイク">ラスタのモザイク</a></h3>
+<p>読み込んだ複数の.tifファイルは、<code>ラスタ＞その他＞結合</code>を選択し、以下の手順で一つにまとめる。通常、データが無い値は、0や-9999などを必要に応じて指定する（今回はデフォルトで実行）。
+<img src="pic/10pic_2.png" alt="モザイク" /></p>
+<ol>
+<li>入力ファイルを選択する。</li>
+<li>出力先とファイル入力する。</li>
+<li>ＯＫをクリックする。</li>
+</ol>
+<p>以下のように、ラスタが結合できる。
+<img src="pic/10pic_3.png" alt="モザイク" /></p>
+<h4 id="macメモ-モザイク"><a class="header" href="#macメモ-モザイク">Macメモ: モザイク</a></h4>
+<ol>
+<li><a href="https://github.com/gis-oer/datasets/raw/master/s/fuji_convert.zip">fuji_convert</a>を入手する</li>
+<li><code>プロセッシング＞ツールボックス</code>から<code>Mosaic raster layers</code>を選択する。</li>
+<li>Input Gridsですべてのラスタを選択、Interpolationを[1]Bilinear Interpolation、Cell sizeを30、保存先を決め実行する。</li>
+</ol>
+<h3 id="ラスタの座標変換"><a class="header" href="#ラスタの座標変換">ラスタの座標変換</a></h3>
+<p>ラスタの座標変換は、<code>ラスタ＞プロジェクション＞ワープ（再投影）</code>から実行する。ここでは、以下の手順で実行する地理座標系から、平面直角座標系に変換する。
+<img src="pic/10pic_4.png" alt="座標変換" /></p>
+<ol>
+<li>入力レイヤとして、結合したラスタを選択する。</li>
+<li>変換元の座標系をEPSG:6668とする。</li>
+<li>変換先の座標系をEPSG:6676とする。</li>
+<li>リサンプリングをバイリニアとする。</li>
+<li>Nodata値を0とする。</li>
+<li>出力先とファイル名を指定する。</li>
+<li><code>実行</code>をクリックする。</li>
+</ol>
+<h3 id="ラスタのクリップ"><a class="header" href="#ラスタのクリップ">ラスタのクリップ</a></h3>
+<p><code>ラスタ＞抽出＞範囲によるラスタクリップ</code>をクリックし、分析に必要な範囲のデータを抽出する。以下からは、結合、再投影したラスタ以外のレイヤを削除しておくと良い。
+<img src="pic/10pic_5.png" alt="クリップ" /></p>
+<ol>
+<li>再投影したラスタを入力レイヤに指定する。</li>
+<li><code>キャンパス上で領域を指定する</code>をクリックし、地図をドラッグして範囲を指定する。</li>
+<li>出力先とファイル名を指定する。</li>
+<li>実行をクリックする。</li>
+</ol>
+<p>以下のように、ラスタがクリップできる。
+<img src="pic/10pic_6.png" alt="クリップ" /></p>
+<h4 id="macメモ-ラスタのクリップ"><a class="header" href="#macメモ-ラスタのクリップ">Macメモ: ラスタのクリップ</a></h4>
+<p><code>プロセッシング＞ツールボックス</code>から<code>Clip raster with polygon</code>を選択し、結合したラスタと切り抜き用ポリゴン（land_condition.shp）を選択する。</p>
+<h3 id="ラスタの配色値の分類"><a class="header" href="#ラスタの配色値の分類">ラスタの配色(値の分類)</a></h3>
+<p>以下では、抽出したデータの配色について解説する。DEMは、ラスタのセルごとに標高値を保持しているため、標高値による色分けができる。色分けは、以下の手順で実行する。
+<img src="pic/10pic_7.png" alt="配色" /></p>
+<ol>
+<li>クリップしたラスタのプロパティ ＞ シンボル体系から、レンダリングタイプを単バンド疑似カラーにする。</li>
+<li>最小を0、最大を4000とする。</li>
+<li>モードを等分位とし、クラスを9とする。</li>
+<li>各値ラベルをクリックし、表示値を書き換える。</li>
+<li>OKをクリックする。</li>
+</ol>
+<p>以下のように、標高値ごとに色わけができる。
+<img src="pic/10pic_8.png" alt="標高値" /></p>
+<p>以下のように、値の追加や編集によって、応用的に色分けすることも可能である（以下では、2500m以下を青色として表現した）。
+<img src="pic/10pic_8-1.png" alt="標高値" /></p>
+<p><a href="./10.html#Menu">▲メニューへもどる</a></p>
+<h2 id="等高線の抽出"><a class="header" href="#等高線の抽出">等高線の抽出</a></h2>
+<p>　作成したラスタデータは、各セルごとに標高値を保持している。そのため、セルの値を補間、等高線を作成することができる。以下では、等高線の作成は、<code>ラスタ＞抽出＞等高線</code>をクリックを選択し、以下の手順で実行する。
+<img src="pic/10pic_9.png" alt="等高線の抽出" /></p>
+<ol>
+<li>入力ファイルを選択する。</li>
+<li>等高線の間隔を入力（今回は、200mとする）する。</li>
+<li>出力先とファイルを入力する（ESRI Shapefileで保存する）。</li>
+<li>実行をクリックする。</li>
+</ol>
+<p>以下のように、200mの等高線が出力される。属性テーブルに、標高値が作成されていることも確認しておくと良い。
+<img src="pic/10pic_10.png" alt="等高線の抽出" /></p>
+<h4 id="macメモ-等高線"><a class="header" href="#macメモ-等高線">Macメモ: 等高線</a></h4>
+<ol>
+<li><code>プロセッシング＞ツールボックス</code>から<code>Contour lines</code>を選択する。</li>
+<li>Gridに対象のラスタを指定し、Equidistanceで等高線の間隔を設定し、保存先を決め実行する。</li>
+</ol>
+<p><a href="./10.html#Menu">▲メニューへもどる</a></p>
+<h2 id="ラスタをベクターに変換する"><a class="header" href="#ラスタをベクターに変換する">ラスタをベクターに変換する</a></h2>
+<p>　GISでは、処理の内容やデータの表現のため、ラスタデータやベクタデータを使い分けて使用します。以下では、ラスターデータをベクタデータ(ポリゴン)に変換する手法について解説しています。</p>
+<p>ラスタをベクターに変換するため、<code>ラスタ＞変換＞ポリゴン化（ラスタのベクタ化）</code>をクリックし、以下の操作を行う。
+<img src="pic/10pic_11.png" alt="ラスタをベクタへ" /></p>
+<ol>
+<li>入力ファイルを選択する。</li>
+<li>作成するフィールドの名前を指定する。</li>
+<li>出力先とファイルを入力する。</li>
+<li>実行をクリックする。</li>
+</ol>
+<p>以下のように、ラスタがベクタに変換されるので、DNフィールドの値で色分けする。
+<img src="pic/10pic_12.png" alt="ラスタをベクタへ" /></p>
+<h3 id="ポリゴンから特定の値例2500m以上の地域を表示する"><a class="header" href="#ポリゴンから特定の値例2500m以上の地域を表示する">ポリゴンから特定の値（例：2500m以上の地域）を表示する</a></h3>
+<p>作成したポリゴンから、特定の値の地域の抽出しデータを表示する場合は、以下のように行う。レイヤの上で右クリックし、<code>プロパティ&gt;シンボロジー</code>をクリックする。
+<img src="pic/10pic_13.png" alt="ラスタをベクタへ" />
+「段階に分けられた」を選択し、カラムに「DN」値を指定する。
+分類数を1にし、「分類」をクリックする。値をクリックし2500-最大値を入力し、OKをクリックする。</p>
+<p><a href="./10.html#Menu">▲メニューへもどる</a></p>
+<h2 id="新規ベクターレイヤの追加"><a class="header" href="#新規ベクターレイヤの追加">新規ベクターレイヤの追加</a></h2>
+<p>　GISでは、データを自作をすることができます。以下では、新規にベクトルデータを作成する手法について解説しています。以下をはじめる前に、富士山登山同図（fuji_trails.tif）をQGISで読み込んで下さい。背景図が読み込みが完了したら、<code>レイヤ＞レイヤの作成＞新規シェープファイルレイヤ</code>を選択し、以下の手順でレイヤの作成を行う。
+<img src="pic/10pic_14.png" alt="テーブルを編集" /></p>
+<ol>
+<li>保存先とファイル名を指定する。</li>
+<li>作成したいレイヤのタイプを選択する。</li>
+<li>座標系（今回は、EPSG:6676とする）を設定する。</li>
+<li>新規ポイントに追加したい属性を<code>新フィールド</code>から設定する。</li>
+</ol>
+<ul>
+<li>「名称」はカラム名、「タイプ」はデータ型にあわせる、「幅」と「精度」は入力するデータによる。</li>
+<li>「タイプ」・・・値が整数ならInteger、小数を含むならReal、テキストならStringとなる。</li>
+<li>「幅」＞桁数、「精度」＞表示する小数の位</li>
+</ul>
+<ol start="5">
+<li>OKをクリックする。</li>
+</ol>
+<p>※新規ベクターレイヤ追加では、ポイント、ライン、ポリゴンを同時に作成することができない。各レイヤを作成する場合ごとに、新規レイヤ作成が必要となる。</p>
+<h3 id="ポイントデータの作成と保存"><a class="header" href="#ポイントデータの作成と保存">ポイントデータの作成と保存</a></h3>
+<p>以下では、富士山の登山道図をトレースして、山小屋のポイントを作成する。追加するポイントのIDと名前は表を参照する。
+レイヤを選択し、<code>編集モード切替</code>をクリックする。
+<img src="pic/10pic_15.png" alt="ポイントデータの作成と保存" /></p>
+<p><code>ポイント地物を追加する</code>をクリックし、山小屋1の位置をクリックし、idと名前を入力する。この作業をid 12まで行う。
+<img src="pic/10pic_16.png" alt="ポイントデータの作成と保存" /></p>
+<p>ポイントが追加できたら、<code>レイヤ編集内容を保存（青枠）</code>、<code>編集モード切替（赤枠）</code>の順でクリックしてデータを保存する。
+<img src="pic/10pic_17.png" alt="ポイントデータの作成と保存" /></p>
+<h3 id="ポイントの削除"><a class="header" href="#ポイントの削除">ポイントの削除</a></h3>
+<p>以下では、ポイントデータを編集する手法について解説しています。ポイントの削除は、編集モードの状態で、選択ツールを用いて、削除したいレイヤを選択し、選択物を削除をクリックする。
+<img src="pic/10pic_18.png" alt="ポイントの削除" /></p>
+<h4 id="ポイントの移動"><a class="header" href="#ポイントの移動">ポイントの移動</a></h4>
+<p>ポイントの移動は、頂点ツールをクリックして、移動したいレイヤの頂点をクリックし、任意の場所に移動する。
+<img src="pic/10pic_19.png" alt="ポイントの移動" /></p>
+<h4 id="属性情報の編集"><a class="header" href="#属性情報の編集">属性情報の編集</a></h4>
+<p>QGISでは、以下のように属性テーブルを開き、属性情報をクリックし、編集したい情報を入力することができる。
+<img src="pic/10pic_20.png" alt="テーブルを編集" /></p>
+<h4 id="ラインデータの作成"><a class="header" href="#ラインデータの作成">ラインデータの作成</a></h4>
+<p><code>レイヤ＞レイヤの作成＞新規シェープファイルレイヤ</code>から、ポイントレイヤと同様の手法でラインデータを作成します。
+<img src="pic/10pic_21.png" alt="ラインデータの作成" /></p>
+<p>以下では、頂点を連結させるため、<code>設定＞オプション＞デジタイズ</code>から、<code>デフォルトでスナップオプションを有効にする</code>にチェックをつける。
+<img src="pic/10pic_22.png" alt="ラインデータの作成" /></p>
+<p>ポイントデータを作成する要領で、登山道を何度もクリックしてなぞるようにラインデータを作成する。作成した線の最後の点で右クリックをするとダイアログが表示されるため、属性情報を入力する（以下では、１．富士宮口の登山道と２．お鉢巡りの道の順で作成します）。
+<img src="pic/10pic_23.png" alt="ラインデータの作成" /></p>
+<p>お鉢巡りを作成する際に、富士宮口登山道の終点に点が重なるように作成する。最終点の周辺にカーソルを重ねるとピンク色になるので、その場所にお鉢巡りの始点と終点を重ねるように作成する。
+<img src="pic/10pic_24.png" alt="ラインデータの作成" /></p>
+<h4 id="ポリゴンデータの作成"><a class="header" href="#ポリゴンデータの作成">ポリゴンデータの作成</a></h4>
+<p>以下では、ポリゴンデータの作成を解説するため、火口のポリゴンを新規に作成する。<a href="../QGIS/QGIS.html">QGISビギナーズマニュアル</a>に従って、<code>ブラウザパネル</code>を表示し、地理院タイル（簡易空中写真）をよみこむ
+<img src="pic/10pic_25.png" alt="ポリゴンデータの作成" /></p>
+<p><code>レイヤ＞レイヤの作成＞新規シェープファイルレイヤ</code>から、ポイントレイヤと同様の手法でポリゴンデータを作成する。
+<img src="pic/10pic_26.png" alt="ポリゴンデータの作成" /></p>
+<p>ラインデータを作成する要領で、火口のふちを何度もクリックしてなぞるようにポリゴンデータを作成する。作成した線の最後の点で右クリックをするとダイアログが表示されるため、属性情報を入力する。
+<img src="pic/10pic_27.png" alt="ポリゴンデータの作成" /></p>
+<p><a href="./10.html#Menu">▲メニューへもどる</a></p>
+<h4 id="この教材の課題ページ_空間データの統合修正へ進む"><a class="header" href="#この教材の課題ページ_空間データの統合修正へ進む">この教材の<a href="./tasks/t_10.html">課題ページ_空間データの統合・修正</a>へ進む</a></h4>
+<h4 id="ライセンスに関する注意事項"><a class="header" href="#ライセンスに関する注意事項">ライセンスに関する注意事項</a></h4>
+<p>本教材で利用しているキャプチャ画像の出典やクレジットについては、<a href="../license.html">その他のライセンスについて</a>よりご確認ください。</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../day3/index.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../day3/tasks/t_10.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../day3/index.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../day3/tasks/t_10.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../searcher.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="../clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="../book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </body>
+</html>
